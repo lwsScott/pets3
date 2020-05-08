@@ -1,0 +1,17 @@
+{
+"name": "lscottgr/328/pets2",
+"authors": [
+{
+"name": "Lewis Scott",
+"email": "lscott19@mail.greenriver.edu"
+},
+{
+  "name": "Roldan Barbante",
+  "email": "rbarbante@mail.greenriver.edu"
+
+}
+],
+"require": {
+"bcosca/fatfree-core": "dev-master"
+}
+}
