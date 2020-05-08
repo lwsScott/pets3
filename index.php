@@ -18,6 +18,8 @@ require_once('vendor/autoload.php');
 
 //instantiate the F3 Base class
 $f3 = Base::instance();
+$f3->set('colors', array('pink', 'green', 'blue'));
+
 
 //define a default route
 //when user visits the default root(file) - ...328/pets2
@@ -47,7 +49,7 @@ $f3->route('GET|POST /order', function($f3){
             $valid = false;
             echo "Please supply a pet type <br>";
         }
-        if ($_POST['color'] != "Brown" && $_POST['color'] != "Black" && $_POST['color'] != "White")
+        if ($_POST['color'] != "pink" && $_POST['color'] != "green" && $_POST['color'] != "blue")
         {
             $valid = false;
             echo "Please supply a valid color";

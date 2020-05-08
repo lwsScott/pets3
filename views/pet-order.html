@@ -48,9 +48,10 @@
             <label for="color" class="col-sm-2 control-label">Select a color</label>
                 <select class="form-control" id = "color" name="color">
                     <option value="none">Select a color</option>
-                    <option value="Brown">Brown</option>
-                    <option value="Black">Black</option>
-                    <option value="White">White</option>
+                    <repeat group="{{ @colors }}" value="{{ @colorOption }}">
+                        <option>{{ @colorOption }}</option>
+                    </repeat>
+
                 </select>
             </fieldset>
         </div>
